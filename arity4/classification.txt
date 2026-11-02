@@ -1,0 +1,62 @@
+Phylogenetic CSPs classification.
+1. Canonical representative: {}
+2. Canonical representative: {C12}
+3. Canonical representative: {C12, C13, C14}
+4. Canonical representative: {P2}
+5. Canonical representative: {C12, C21, P2}
+6. Canonical representative: {C12, C13, C14, C21, P2}
+7. Canonical representative: {C12, C13, C14, C21, C23, C24, P2}
+8. Canonical representative: {P2, P3, P4}
+
+Additionally, all instances of the following phylogenetic CSPs are always satisfiable and thus poly-tractable:
+a. {C12, C13, C14, C21, C23, C24, C31, C32, C34, C41, C42, C43}
+b. {C12, C13, C14, C21, C23, C24, C31, C32, C34, C41, C42, C43, P2}
+c. {C12, C13, C14, C21, C23, C24, C31, C32, C34, C41, C42, C43, P2, P3}
+d. {C12, C13, C14, C21, C23, C24, C31, C32, C34, C41, C42, C43, P2, P3, P4}
+
+The following constraints have non-trivial relaxations (only one representative for each CSP class is printed):
+1. Relaxation for {C12, C13} is {C12, C13, C14} Delta: {C14}
+2. Relaxation for {C12, C21} is {C12, C21, P2} Delta: {P2}
+3. Relaxation for {C13, C21} is {C12, C13, C14, C21, P2} Delta: {C12, C14, P2}
+4. Relaxation for {C12, C13, C21} is {C12, C13, C14, C21, P2} Delta: {C14, P2}
+5. Relaxation for {C13, C14, C21} is {C12, C13, C14, C21, P2} Delta: {C12, P2}
+6. Relaxation for {C12, C13, C14, C21} is {C12, C13, C14, C21, P2} Delta: {P2}
+7. Relaxation for {C13, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C14, C21, C24, P2}
+8. Relaxation for {C12, C13, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C14, C21, C24, P2}
+9. Relaxation for {C14, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C13, C21, C24, P2}
+10. Relaxation for {C12, C14, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C13, C21, C24, P2}
+11. Relaxation for {C13, C14, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C21, C24, P2}
+12. Relaxation for {C12, C13, C14, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C21, C24, P2}
+13. Relaxation for {C12, C13, C21, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C14, C24, P2}
+14. Relaxation for {C12, C14, C21, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C13, C24, P2}
+15. Relaxation for {C13, C14, C21, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C24, P2}
+16. Relaxation for {C12, C13, C14, C21, C23} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C24, P2}
+17. Relaxation for {C13, C14, C23, C24} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C21, P2}
+18. Relaxation for {C12, C13, C14, C23, C24} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C21, P2}
+19. Relaxation for {C12, C13, C14, C21, C23, C24} is {C12, C13, C14, C21, C23, C24, P2} Delta: {P2}
+20. Relaxation for {C12, P2} is {C12, C21, P2} Delta: {C21}
+21. Relaxation for {C13, P2} is {C12, C13, C14, C21, P2} Delta: {C12, C14, C21}
+22. Relaxation for {C12, C13, P2} is {C12, C13, C14, C21, P2} Delta: {C14, C21}
+23. Relaxation for {C13, C14, P2} is {C12, C13, C14, C21, P2} Delta: {C12, C21}
+24. Relaxation for {C12, C13, C14, P2} is {C12, C13, C14, C21, P2} Delta: {C21}
+25. Relaxation for {C13, C21, P2} is {C12, C13, C14, C21, P2} Delta: {C12, C14}
+26. Relaxation for {C12, C13, C21, P2} is {C12, C13, C14, C21, P2} Delta: {C14}
+27. Relaxation for {C13, C14, C21, P2} is {C12, C13, C14, C21, P2} Delta: {C12}
+28. Relaxation for {C13, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C14, C21, C24}
+29. Relaxation for {C12, C13, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C14, C21, C24}
+30. Relaxation for {C14, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C13, C21, C24}
+31. Relaxation for {C12, C14, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C13, C21, C24}
+32. Relaxation for {C13, C14, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C21, C24}
+33. Relaxation for {C12, C13, C14, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C21, C24}
+34. Relaxation for {C12, C13, C21, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C14, C24}
+35. Relaxation for {C12, C14, C21, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C13, C24}
+36. Relaxation for {C13, C14, C21, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C24}
+37. Relaxation for {C12, C13, C14, C21, C23, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C24}
+38. Relaxation for {C13, C14, C23, C24, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C12, C21}
+39. Relaxation for {C12, C13, C14, C23, C24, P2} is {C12, C13, C14, C21, C23, C24, P2} Delta: {C21}
+40. Relaxation for {P2, P3} is {P2, P3, P4} Delta: {P4}
+Total constraints: 32768
+Isomorphism classes: 1576
+Poly-tractable classes, excluding always satisfiable: 8
+Always satisfiable classes: 4
+Constraints with non-trivial relaxations: 40

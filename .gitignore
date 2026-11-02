@@ -1,0 +1,7 @@
+# Build products and local environments
+/csp_classification
+__pycache__/
+.venv/
+
+# Output of verify_arity4.py when run with --output-dir output
+/output/
